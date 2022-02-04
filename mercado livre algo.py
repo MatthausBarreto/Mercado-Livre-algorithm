@@ -5,12 +5,8 @@ def process(user_number, user_condition):
 
     for i in range(0, length):      
         
-        #checks if the user input number has a digit equal or greater than 7
-        if user_condition < 0 or user_condition > 9:
-            return print('sorry, invalid input, number must be an integer between 0 and 9.')
-
         #checks if the the user input fits the number of digits allowed
-        elif i > 3:
+        if i > 3:
             return print('sorry, invalid input, type an integer between 0 and 9999.')
         
     #loops through the numbers until the user's input number
@@ -40,7 +36,7 @@ def process(user_number, user_condition):
 user_input = input('Type a number between 0 and 9999:')
 
 #gets the digit condition
-user_input_condition = int(input('Enter a number between 0 and 9, numbers with that digit won\'t be validate in the count:'))
+user_input_condition = int(input('Enter a number between 0 and 9, numbers won\'t be validate in the count:'))
 
 #calls the process function
 print(process(user_input, user_input_condition))
