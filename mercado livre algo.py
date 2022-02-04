@@ -33,10 +33,10 @@ def process(user_number, user_condition):
     return print('the total of numbers which it\'s sum was 21:', counter)
 
 #gets the number to be looped through 
-user_input = input('Type a number between 0 and 9999:')
+user_input = input('Enter a number between 0 and 9999:')
 
 #gets the digit condition
-user_input_condition = int(input('Enter a number between 0 and 9, numbers won\'t be validate in the count:'))
+user_input_condition = int(input('Enter a number between 0 and 9, numbers with a digit equal or greater than this number won\'t be validate in the count:'))
 
 #calls the process function
 print(process(user_input, user_input_condition))
